@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="descrption" content="">
+	<meta name="viewport" content="width=device-width, users-scalable=no, initial-scale=1.0, maximun-scale=1.0, manimun-scale=1.0">
+	<title>hCo</title>
+<!--
+	Inicio apredizaje de git 01/12/2022 - 
+-->
+
+<!--
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+-->
+	<link rel="stylesheet" href="css/estilos.css">
+	
+<style>
+#titulo{
+	margin-left:150px;
+}
+
+#foto p{
+	background-color:#000;
+	color:#FFF;
+	font-size:24px;
+	text-align:center;
+	font-weight:bold;
+	width:300px;
+}
+h1{
+	text-align:center;
+}
+</style>
+
+<script src="jquery-1.6.3.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#titulo").hide();
+		
+		$("#foto img").width(60).height(40).click(function(){
+			
+			$(this).animate({
+				
+				marginLeft:"150px",
+				width:"300",
+				height:"200",
+			},1500,function(){	
+				$("#titulo").fadeIn(1000).delay(1000).fadeOut(1000);
+			
+			}).delay(1500); /*FIN 1ER ANIMATE, la img queda 3seg y desaparece*/
+			
+			$(this).animate({ /*OTRO ANIMATE*/
+				
+				marginLeft:"0px",
+				width:"60",
+				height:"40",
+			},1500);
+		});
+		
+	})
+		
+</script>
+	
+	
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="contenedor">
+				<!--<img src="img/logo-hco.jpg" width="125" height="125"alt="">-->
+				<svg height="130" width="2000">
+				<defs>
+				<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+				<stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+				<stop offset="100%"	style="stop-color:rgb(255,0,0);stop-opacity:1" />
+				</linearGradient>
+				</defs>
+				<ellipse cx="100" cy="70" rx="90" ry="55" fill="url(#grad1)" />
+				<text fill="#ffffff" font-size="70" font-family="verdana" x="40" y="86">hCo</text>
+				Sorry, your browser does not support inline SVG.
+				</svg>
+				<a href="#nosotros">Nosotros</a>
+				<a href="link/facturacionelectronica.html" target="_blank" rel="noopener noreferrer"">CATS_usl Software Facturacion Electronica Contable</a>
+				<a href="link/hcoweb.html" target="_blank" rel="noopener noreferrer">Desarrollo WEB</a>
+				<a href="#">Hector Cardona Otalvora Cel:316 8407401 Email:etorcardona@gmail.com</a>
+			</div>
+		</nav>
+		<div class="contenedor-imagen">
+			<a href="#blog">
+				<img src="img/computador.jpg" width="200" alt="">
+			</a>
+		</div>
+	</header>
+<!--
+<div id="foto">
+	<img src="img/batman.jpg" width="50" height="50" id="imagen">
+	<p id="titulo">Batman</p>
+</div>
+-->
+	<main id="blog">
+		<div class="contenedor">
+			<aside>
+				<h3 class="titulo">Indice</h3>
+				<nav class="indice">
+					<a href="#nosotros">Nosotros</a>
+					<a href="#fce">Facturacion Electronica</a>
+					<a href="#contable">Contabilidad</a>
+					<a href="#inventario">Inventarios</a>
+					<a href="#pos">POS</a>
+				</nav>
+			</aside>
+			<div class="contenido">
+				<div class="post">
+					<h1 class="titulo" id="nosotros">Nosotros</h1>
+					<p class="fecha">Publicado el 31 de Octubre de 2022</p>
+					<p>En hCo, estamos dedicados al desarrollo de aplicaciones informáticas para la gestión de empresas
+					comerciales o produccion en sus diferentes aréas.
+					<br><br>Nuestra actividad es el desarrollo de Software a la medida.
+					<br>Si necesita: Software Contable -Inventarios -Compras -Pedidos -Facturacion -Puntos de Venta P.O.S 
+					o cualquier otro tipo de Software/Aplicacion.
+					<br><br>Caracteristicas
+					<br>Adaptable a su empresa y puede crecer con su negocio.
+					<br>Es Parametrizable de acuerdo a sus necesidades particulares.
+					<br>Actualizacion de saldos en linea.
+					<br>Contabilizacion por documentos individuales.
+					<br>Integre sus procesos comerciales con el area contable, administre sus inventarios, compras, facturacion.
+					<br>Obtenga informes de inventarios, establezca control de cartera y pago a proveedores.
+					<br>Genere ventas P.O.S actualizando sus inventarios en linea
+					</p>
+				</div>
+				<div class="post">
+					<h1 class="titulo" id="fce">Facturacion Electronica</h1>
+					<p class="fecha">Publicado el 31 de Octubre de 2022</p>
+					<p>
+					Elija el paquete de emisión de <strong>Facturacion Electronica</strong>, Notas Débito, Notas Crédito y Documentos Soporte que mas
+					se ajuste a sus necesidades.
+					<br>Adquiera Nomina Electronica en la Nube es Facilisimo
+					<br><br>Todos los paquetes incluyen firma y certificado digital.
+					<br><br>CERTIFICADO DIGITAL SIN COSTO ADICIONAL
+					</p>
+				</div>
+				<div class="post">
+					<h1 class="titulo" id="contable">Contabilidad</h1>
+					<p class="fecha">Publicado el 31 de Octubre de 2022</p>
+					<p>
+					Recoge y suministra la información financiera, administrativa tributaria necesaria para reflejar el estado de
+					la empresa o sus partes, a nivel de resumen cuenta - concepto o de detalle centro, tercero, documento que fuera  
+					requerido por gestores, inversores o entidades de control a la vez que permite a los grupos contables
+					llevar a cabo su labor en un marco de alta productividad.
+					-Integración/actualización en linea con los módulos de
+					cxp, cxc, facturación, inventarios.
+					</p>
+				</div>
+				<div class="post">
+					<h1 class="titulo" id="inventario">Inventarios</h1>
+					<p class="fecha">Publicado el 31 de Octubre de 2022</p>
+					<p>
+					El modulo inventarios hace parte de un todo logístico
+					coherente con los Módulos de Abastecimiento-Compras y Ventas,
+					compartiendo con ellos la gestiónde tablas comunes para la gestión de Items-Artículos,
+					Bodegas-Localizaciones, entre otras y permitiendo reunir
+					consistentemente los movimientos, saldos y compromisos
+					de Inventarios, para la mayoría de escenarios de las
+					compañias: Bienes consumibles, Comercialización, como
+					tambien de las materias primas, Productos en proceso o
+					Productos terminados. 
+					</p>
+				</div>		
+				<div class="post">
+					<h1 class="titulo" id="pos">POS</h1>
+					<p class="fecha">Publicado el 31 de Octubre de 2022</p>
+					<p>
+					Capture productos, digitando codigo de producto o
+					lector de codigo de barras, multiples opciones de precio de venta.
+					Imprima su tiket de venta a la vez que permite el  
+					recaudo en sus diferentes opciones, efectivo, TD, TC
+					Tiket personalizado con informacion del comprador.
+					Multicajas.
+					Genere informe de ventas.
+					Genere informe de utilidades.
+					Contabilice sus ventas mediante interfaz.
+					</p>
+				</div>		
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="contenedor-imagen">
+			<img src="img/img2.jpg" width="200" alt="">
+<!--		<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">-->
+		</div>
+		<nav class="navbar">
+				<div class="contenedor">
+				<a href="#">Inicio</a>
+				<a href="link/facturacionelectronica.html" target="_blank" rel="noopener noreferrer">Facturacion Electronica</a>
+				<a href="#contable">Contabilidad</a>
+				<a href="#inventario">Inventarios</a>
+				<a href="#pos">POS</a>
+				<a href="link/hcoweb.html" target="_blank" rel="noopener noreferrer">Desarrollo WEB</a>
+				<a href="#">Hector Cardona Otalvora Cel:316 8407401 Email:etorcardona@gmail.com</a>
+			</div>
+		</nav>
+	</footer>
+</body>
+</html>
